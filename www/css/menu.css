@@ -1,0 +1,46 @@
+
+@media screen and (max-width: 980px)
+{
+
+    .ui-panel-inner
+    {
+        padding:0px; /*make the buttons flush edge to edge*/
+    }
+    .ui-controlgroup
+    {
+        margin:0; /*make the buttons flush to the top*/
+    }
+    #header
+    {
+        height:54px;
+    }
+    #menu-button
+    {
+        margin:7px;
+    }
+
+    img,object{
+
+        max-height: 30%;
+        max-width: 100%;
+    }
+
+    li
+    {
+        opacity: 0;
+
+    }
+
+    li:nth-child(1){animation:bringback 1s 3s forwards;}
+    li:nth-child(2){animation:bringback 1s 6s forwards;}
+    li:nth-child(3){animation:bringback 1s 9s forwards;}
+    li:nth-child(4){animation:bringback 1s 12s forwards;}
+    li:nth-child(5){animation:bringback 1s 15s forwards;}
+    li:nth-child(6){animation:bringback 1s 18s forwards;}
+    li:nth-child(7){animation:bringback 1s 21s forwards;}
+
+    @keyframes bringback{
+        to{opacity:1;text-indent:25px};
+
+    }
+}

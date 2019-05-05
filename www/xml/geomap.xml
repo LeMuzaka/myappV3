@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<hospitals>
+
+    <hospital>
+        <name>Dr AG Jeetoo Hospital</name>
+        <phone>203 1001</phone>
+        <latitude>-20.168991</latitude>
+        <longitude>57.502155</longitude>
+        <address>Volcy Pougnet Street, Port Louis</address>
+    </hospital>
+
+    <hospital>
+        <name>Long Mountain Hospital</name>
+        <phone></phone>
+        <latitude>-20.150372</latitude>
+        <longitude>57.572218</longitude>
+        <address>Police Station, B19, Baillache, Long Mountain</address>
+    </hospital>
+
+    <hospital>
+        <name>Goodlands Mediclinic</name>
+        <phone>283 2259</phone>
+        <latitude>-20.043838</latitude>
+        <longitude>57.651848</longitude>
+        <address>Goodlands</address>
+    </hospital>
+
+
+</hospitals>

@@ -1,0 +1,313 @@
+{
+	"hospitals": [
+		{
+			"name": "Jawaharlal Nehru Hospital",
+			"latitude": "-20.405294",
+			"longitude": "57.593681",
+			"address": "M2, Rose Belle",
+			"phone": "603 7000",
+			"openinghrs": "",
+			"closinghrs": ""
+		},
+		
+		{
+			"name": "Grand Bay Medical and Diagnostic Centre",
+			"latitude": "-20.019637",
+			"longitude": "57.580367",
+			"address": "Sottise Rd, Grand Baie",
+			"phone": "263 1212",
+			"openinghrs": "",
+			"closinghrs": ""
+		},
+		
+		{
+			"name": "Clinique Fortis Darné - La Croisette",
+			"latitude": "-20.021979",
+			"longitude": "57.579708",
+			"address": "Grand Baie",
+			"phone": "601 2500",
+			"openinghrs": "",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Goodlands Mediclinic",
+			"latitude": "-20.043838",
+			"longitude": "57.651848",
+			"address": "Goodlands",
+			"phone": "283 2259",
+			"openinghrs": "-",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Centre Medical Du Nord",
+			"latitude": "-20.008307",
+			"longitude": "57.559647",
+			"address": "Rte Royal, Grand Baie",
+			"phone": "263 1010",
+			"openinghrs": "",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Poudre D’or Chest Hospital",
+			"latitude": "-20.059345",
+			"longitude": "57.685101",
+			"address": "Poudre d'Or",
+			"phone": "282 1181",
+			"openinghrs": "",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Stella Maris Clinic",
+			"latitude": "-20.054331",
+			"longitude": "57.556621",
+			"address": "Triolet",
+			"phone": "-",
+			"openinghrs": "-",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Triolet Medi-Clinic",
+			"latitude": "-20.060544",
+			"longitude": "57.555528",
+			"address": "New Market Rd, Triolet",
+			"phone": "5722 1431",
+			"openinghrs": "07:00",
+			"closinghrs": "22:00"
+		},
+
+		{
+			"name": "Bon Air Community Health Centre",
+			"latitude": "-20.065497 ",
+			"longitude": "57.570195",
+			"address": "Morcellement St Andre",
+			"phone": "261 6913",
+			"openinghrs": "-",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Plaine des Papayes Community Health Centre",
+			"latitude": "-20.064239",
+			"longitude": "57.580972",
+			"address": "Royal Rd, Plaine Des Papayes",
+			"phone": "-",
+			"openinghrs": "-",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Mahatma Gandhi Ayurveda Charitable Hospital",
+			"latitude": "-20.110821",
+			"longitude": "57.551939",
+			"address": "Calebasses",
+			"phone": "243 0772",
+			"openinghrs": "-",
+			"closinghrs": ""
+		},
+
+		{ 
+			"name": "Long Mountain Hospital",
+			"latitude": "-20.150372",
+			"longitude": "57.572218",
+			"address": "Police Station, B19, Baillache, Long Mountain",
+			"phone": "-",
+			"openinghrs": "",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Dr AG Jeetoo Hospital (Civil)",
+			"latitude": "-20.168991",
+			"longitude": "57.502155",
+			"address": "Volcy Pougnet Street (ex-rue Madame), Port Louis",
+			"phone": "203 1001",
+			"openinghrs": "",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Dispensary",
+			"latitude": "-20.130264",
+			"longitude": "57.598586",
+			"address": "B20, D'Epinay",
+			"phone": "-",
+			"openinghrs": "09:00",
+			"closinghrs": "16:00"
+		},
+
+		{
+			"name": "Wellkin Hospital",
+			"latitude": "-20.233059",
+			"longitude": "57.502682",
+			"address": "Moka",
+			"phone": "605 1000",
+			"openinghrs": "",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Victoria Hospital",
+			"latitude": "-20.278310",
+			"longitude": "57.476513",
+			"address": "Candos Vacoas Road, Quatre Bornes",
+			"phone": "425 3031",
+			"openinghrs": "",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Health Centre Vacoas",
+			"latitude": "-20.297995",
+			"longitude": "57.488767",
+			"address": "Vacoas-Phoenix",
+			"phone": "696 5024",
+			"openinghrs": "08:00",
+			"closinghrs": "15:30"
+		},
+
+		{
+			"name": "Flacq Hospital",
+			"latitude": "-20.191845",
+			"longitude": "57.719193",
+			"address": "Central Flacq",
+			"phone": "402 2400",
+			"openinghrs": "",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Sir Seewoosagur Ramgoolam National (SSRN) Hospital",
+			"latitude": "-20.096676",
+			"longitude": "57.559296",
+			"address": "B18",
+			"phone": "209 3400",
+			"openinghrs": "",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Clinique Du Nord",
+			"latitude": "-20.130666",
+			"longitude": "57.496941",
+			"address": "81 Royal Road, Port Louis",
+			"phone": "247 2532",
+			"openinghrs": "-",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "La Clinique Mauricienne",
+			"latitude": "-20.232215",
+			"longitude": "57.495701",
+			"address": "Moka",
+			"phone": "454 3061",
+			"openinghrs": "",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Medpoint Hospital",
+			"latitude": "-20.280592",
+			"longitude": "57.484505",
+			"address": "Sir Seewoosagar Ramgoolam Avenue, Vacoas-Phoenix",
+			"phone": "426 7777",
+			"openinghrs": "-",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "DHI Mauritius",
+			"latitude": "-20.308837",
+			"longitude": "57.511955",
+			"address": "King George V Ave, Vacoas-Phoenix",
+			"phone": "-",
+			"openinghrs": "09:00",
+			"closinghrs": "17:00"
+		},
+
+		{
+			"name": "Active Health Care Mauritius",
+			"latitude": "-20.324461",
+			"longitude": "57.530321",
+			"address": "Curepipe",
+			"phone": "5440 3464",
+			"openinghrs": "09:00",
+			"closinghrs": "17:00"
+		},
+
+		{
+			"name": "Mahebourg Hospital",
+			"latitude": "-20.410800",
+			"longitude": "57.703352",
+			"address": "Mahebourg",
+			"phone": "631 9556",
+			"openinghrs": "",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Medi Clinic",
+			"latitude": "-20.474270",
+			"longitude": "57.618036",
+			"address": "L'Escalier",
+			"phone": "-",
+			"openinghrs": "-",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "New Souillac Hospital",
+			"latitude": "-20.521354",
+			"longitude": "57.523882",
+			"address": "Savanne Road, Souillac",
+			"phone": "603 7100",
+			"openinghrs": "",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Tyack Health Centre",
+			"latitude": "-20.481098",
+			"longitude": "57.557750",
+			"address": "Riviere des Anguilles",
+			"phone": "-",
+			"openinghrs": "07:00",
+			"closinghrs": "18:00"
+		},
+
+		{
+			"name": "Chamarel CHC",
+			"latitude": "-20.429868",
+			"longitude": "57.390011",
+			"address": "-",
+			"phone": "483 4397",
+			"openinghrs": "-",
+			"closinghrs": ""
+		},
+
+		{
+			"name": "Anavara Medical Tourism (Mauritius Limited)",
+			"latitude": "-20.246843",
+			"longitude": "57.597594",
+			"address": "One Way Road Quartier Militaire, Moka",
+			"phone": "5902 1660",
+			"openinghrs": "09:00",
+			"closinghrs": "17:00"
+		},
+
+		{
+			"name": "L’esperance CHC",
+			"latitude": "-20.223813",
+			"longitude": "57.595758",
+			"address": "Esperance,Quartier Militaire",
+			"phone": "-",
+			"openinghrs": "-",
+			"closinghrs": ""
+		}
+	]
+}

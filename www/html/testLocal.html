@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Local Storage</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="../jquerymobile/jquery.mobile-1.4.5.css">
+<script src="../jquerymobile/jquery.js"></script>
+<script src="../jquerymobile/jquery.mobile-1.4.5.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+
+<link href="../css/menu.css" rel="stylesheet">
+
+<script type="text/javascript">
+
+
+document.addEventListener("deviceready",onDeviceReady,false);
+
+var db;
+
+function onDeviceReady()
+{
+     db = window.openDatabase("Database","1.0","Cordova Demo", 2*1024*1024);
+    //name of database- 1st parameter
+    //2nd parameter is the version
+    // 3rd parameter - explaining
+    //4th parameter - size of database 2MB
+
+    db.transaction(createDB, errorCB, successCB);
+}
+
+
+function createDB(tx)
+{
+   tx.executeSql('DROP TABLE IF EXISTS DEMO');
+   tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO(id unique, title, image, description)');
+
+}
+
+function errorCB(err)
+{
+    alert("error processing SQL: "+err.code);
+}
+
+function successCB()
+{
+    alert("YEAH!!");
+}
+
+function insertDB(tx){
+    var _title=$("[name='title']").val();
+    var _image=$("[name='image']").val();
+    var _description = $("[name='description']").val();
+    var sql='INSERT INTO DEMO (_title, _image,_description) VALUES (?,?,?)';
+
+    tx.executeSql(sql, [_title,_image,_description], successqueryDB, errorCB);
+
+    //1st-paramater - sql statement
+    //2nd-parameter - an array to store our variable
+
+}
+
+function successqueryDB(tx)
+{
+    alert("query");
+    tx.executeSql("SELECT * FROM DEMO",[], renderList, errorCB);
+}
+
+function renderList(tx,results)
+{
+    var htmlstring ='';
+    var len= results.rows.length;
+
+    for(var i=0; i<len ; i++)
+    {
+        htmlstring += '<li>'+ results.rows.item[i].title+'</br>'+results.rows.item[i].description +'</li>';
+    }
+
+    $('#resultView').html(htmlstring);
+    $('#resultView').listview('refresh');
+
+}
+
+function submitForm()
+{
+    db.transaction(insertDB, errorCB);
+
+    $.mobile.changePage("#page2",{ reverse:false, transition:"slide"});
+
+    return false;
+}
+</script>
+
+</head>
+<body>
+
+    <!-- page1 -->
+    <div data-role="page" id="page1" data-theme="b">
+
+        <div data-role ="panel" id="menu3" data-display="overlay" data-position="left">
+            <div data-role="controlgroup">
+                <a href="../index.html" data-icon="home" data-role="button" rel="external">Home</a>
+                <a href="#center" data-icon="location" data-role="button">Center</a>
+                <a href="#page3" data-icon="user" data-role="button">Statistic</a>
+                <a href="#" data-icon="phone" data-role="button">Friends</a>
+                <a href="#" data-icon="info" data-role="button">Help</a>
+            </div>
+        </div>
+
+        <div data-role="header" id="header">
+            <a id="menu-button" data-icon="bars"  class="ui-btn-left" style="margin-top:10px;" href="#menu3">Menu</a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <form action="POST" onsubmit="return submitForm()" id="myForm" data-ajax="false">
+                <label for="title" class="ui-hidden-accessible">Title</label>
+                <input type="text" name="title" placeholder="Title">
+
+                <label for="image" class="ui-hidden-accessible">Title</label>
+                <input type="text" name="image" placeholder="Image:URI">
+
+                <input type="text" name="description" placeholder="Description">
+
+                <input type="submit" value="Submit">
+
+
+            </form>
+
+
+
+        </div>
+
+
+        <div data-role="footer">
+            <h3>Alcohol_Addiction@Copyright</h1>
+        </div>
+
+    </div>
+    <!-- end of page1 -->
+
+    <!-- page2 -->
+
+    <div data-role="page" id="page2" data-theme="b">
+
+        <div data-role ="panel" id="menu3" data-display="overlay" data-position="left">
+            <div data-role="controlgroup">
+                <a href="../index.html" data-icon="home" data-role="button" rel="external">Home</a>
+                <a href="#center" data-icon="location" data-role="button">Center</a>
+                <a href="#page3" data-icon="user" data-role="button">Statistic</a>
+                <a href="#" data-icon="phone" data-role="button">Friends</a>
+                <a href="#" data-icon="info" data-role="button">Help</a>
+            </div>
+        </div>
+
+        <div data-role="header" id="header">
+            <a id="menu-button" data-icon="bars"  class="ui-btn-left" style="margin-top:10px;" href="#menu3">Menu</a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div id="output">
+
+                <ul id="resultView">
+
+                </ul>
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <div data-role="footer">
+            <h3>Alcohol_Addiction@Copyright</h1>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
